@@ -1,0 +1,28 @@
+/* Thanodi draws its own toolbar; Excalidraw's menus, toolbars and footers stay hidden. */
+.thanodi-whiteboard {
+  background-size: 24px 24px;
+}
+
+.thanodi-whiteboard[data-grid="on"] {
+  background-image:
+    linear-gradient(var(--whiteboard-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--whiteboard-grid) 1px, transparent 1px);
+}
+
+.thanodi-whiteboard .excalidraw {
+  --color-primary: var(--primary);
+  --ui-font: var(--font-jakarta), system-ui, sans-serif;
+}
+
+.thanodi-whiteboard .layer-ui__wrapper,
+.thanodi-whiteboard .FixedSideContainer,
+.thanodi-whiteboard .HintViewer,
+.thanodi-whiteboard .App-bottom-bar,
+.thanodi-whiteboard .App-mobile-menu,
+.thanodi-whiteboard .App-toolbar--mobile,
+.thanodi-whiteboard .mobile-misc-tools-container,
+.thanodi-whiteboard .welcome-screen-center,
+.thanodi-whiteboard .welcome-screen-decor,
+.thanodi-whiteboard .scroll-back-to-content {
+  display: none !important;
+}
